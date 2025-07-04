@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change H1 Color</title>
+</head>
+<body>
+
+  <h1 id="heading">Hello, Virat!</h1>
+
+  <label for="colorInput">Enter a color (e.g., red, blue, #00ff00):</label><br>
+  <input type="text" id="colorInput" placeholder="Enter text color">
+  <button onclick="changeColor()">Submit</button>
+
+  <script>
+    function changeColor() {
+      const color = document.getElementById("colorInput").value;
+      const heading = document.getElementById("heading");
+      heading.style.color = color;
+    }
+  </script>
+
+</body>
+</html>
